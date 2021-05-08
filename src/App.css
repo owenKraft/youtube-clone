@@ -1,38 +1,284 @@
-.App {
-  text-align: center;
+/* CSS Micro Reset */
+
+/* * {box-sizing: border-box}
+
+body { margin: 0 }
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal }
+
+table
+{
+ border-collapse: collapse;
+ border-spacing: 0
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+th, td
+{
+ text-align: left;
+ vertical-align: top
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img, iframe { border: 0 } */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  font-family: "Roboto",Arial,sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input{
+  box-sizing:border-box
+} 
+
+/* ^ CSS Reset ^ */
+
+:root {
+  --main-bg-color-dark: #191919;
+  --main-border-color-dark: hsl(0, 0%, 18.82%);
+  --sec-txt-color: #AAA;
+}
+
+body {
+  background-color: var(--main-bg-color-dark);
   color: white;
+  font-family: "Roboto",Arial,sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+  height: 56px;
+  background-color: var(--main-bg-color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--main-border-color-dark);
+  position: sticky;
+  top: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar > div {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left {
+  margin-left: 20px;
+}
+
+.hamburger {
+  padding: 4px;
+  margin: 8px 24px 8px 8px;
+}
+
+.logo {
+  height: 24px;
+  width: 80px;
+}
+
+.search-area {
+  display: flex;
+  height: 32px;
+}
+
+.search-bar {
+  height: 100%;
+  padding: 0;
+  display: flex;
+}
+
+.search-input {
+  background-color: #000;
+  height: 32px;
+  min-width: 75px;
+  width: 411px;
+  max-width: 411px;
+  border: 1px solid var(--main-border-color-dark);
+  padding-left: 12px;
+}
+
+.search-input::placeholder {
+  color: hsla(0, 100%, 100%, 0.5);
+  opacity: 1;
+}
+
+.search-button {
+  background-color: #303030;
+  height: 100%;
+  width: 65px;
+  padding: 1px 6px;
+  border: none;
+}
+
+.fa-search {
+  color: hsla(0, 100%, 100%, 0.5);
+}
+
+.search-voice {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+}
+
+.fa-microphone {
+  font-size: 20px;
+}
+
+.nav-right {
+  height: 40px;
+  margin-right: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-right > i {
+  font-size: 20px;
+  margin: 8px 16px 8px 8px;
+}
+
+.sign-in-button {
+  text-transform: uppercase;
+  height: 40px;
+  padding: 5px 11px;
+  background-color: inherit;
+  border: 1px solid #3EA6FF;
+  color: #3EA6FF;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.fa-user-circle {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.main {
+  width: auto;
+  display: flex;
+}
+
+.video-column {
+  width: fill;
+  height: 100%;
+  padding: 24px;
+}
+
+.youtube-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.youtube-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-details {
+  width: 100%;
+  padding: 20px 0 0 0;
+  border-bottom: 1px solid var(--main-border-color-dark);
+}
+
+.video-title {
+  height: 24px;
+  font-size: 18px;
+  font-weight: 400px;
+}
+
+.video-details-data-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--sec-txt-color);
+}
+
+.viewer-date-data {
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+
+.video-details-button-bar {
+  display: flex;
+  height: 44px;
+  align-items: flex-start;
+}
+
+.button-bar-button {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  height: 36px;
+  padding: 0 6px 0 0;
+  background: none;
+  border: none;
+  color: var(--sec-txt-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.button-bar-button-img {
+  padding: 6px;
+}
+
+.likes-button, .dislikes-button {
+  height: 44px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--sec-txt-color);
+}
+
+.rec-column {
+  background-color: #FDB0C0;
+  width: 40%;
+  height: 100%;
+  padding: 24px 24px 0 0;
 }
