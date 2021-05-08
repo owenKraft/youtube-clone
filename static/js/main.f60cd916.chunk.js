@@ -1,2 +1,0 @@
-(this["webpackJsonpyoutube-clone"]=this["webpackJsonpyoutube-clone"]||[]).push([[0],{11:function(e,n,t){"use strict";t.r(n);var c=t(1),o=t.n(c),r=t(3),u=t.n(r),i=(t(8),t(9),t(0));var s=function(){return Object(i.jsx)("div",{children:"Hello world"})};u.a.render(Object(i.jsx)(o.a.StrictMode,{children:Object(i.jsx)(s,{})}),document.getElementById("root"))},8:function(e,n,t){},9:function(e,n,t){}},[[11,1,2]]]);
-//# sourceMappingURL=main.f60cd916.chunk.js.map
