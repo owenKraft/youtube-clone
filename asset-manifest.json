@@ -1,26 +1,30 @@
 {
   "files": {
-    "main.css": "/youtube-clone/static/css/main.294217d6.chunk.css",
-    "main.js": "/youtube-clone/static/js/main.05f353c1.chunk.js",
-    "main.js.map": "/youtube-clone/static/js/main.05f353c1.chunk.js.map",
+    "main.css": "/youtube-clone/static/css/main.e0ef7d70.chunk.css",
+    "main.js": "/youtube-clone/static/js/main.7c053825.chunk.js",
+    "main.js.map": "/youtube-clone/static/js/main.7c053825.chunk.js.map",
     "runtime-main.js": "/youtube-clone/static/js/runtime-main.0ffba3bb.js",
     "runtime-main.js.map": "/youtube-clone/static/js/runtime-main.0ffba3bb.js.map",
     "static/js/2.dc025bb5.chunk.js": "/youtube-clone/static/js/2.dc025bb5.chunk.js",
     "static/js/2.dc025bb5.chunk.js.map": "/youtube-clone/static/js/2.dc025bb5.chunk.js.map",
     "index.html": "/youtube-clone/index.html",
-    "static/css/main.294217d6.chunk.css.map": "/youtube-clone/static/css/main.294217d6.chunk.css.map",
+    "static/css/main.e0ef7d70.chunk.css.map": "/youtube-clone/static/css/main.e0ef7d70.chunk.css.map",
     "static/js/2.dc025bb5.chunk.js.LICENSE.txt": "/youtube-clone/static/js/2.dc025bb5.chunk.js.LICENSE.txt",
+    "static/media/channel-logo.812f2833.jpeg": "/youtube-clone/static/media/channel-logo.812f2833.jpeg",
+    "static/media/default_thumbnail.06413e23.jpeg": "/youtube-clone/static/media/default_thumbnail.06413e23.jpeg",
     "static/media/dots-horizontal.a031c8fc.svg": "/youtube-clone/static/media/dots-horizontal.a031c8fc.svg",
     "static/media/logo_dark_mode.31f0b50e.svg": "/youtube-clone/static/media/logo_dark_mode.31f0b50e.svg",
     "static/media/playlist-plus.a02c940e.svg": "/youtube-clone/static/media/playlist-plus.a02c940e.svg",
     "static/media/share.2b19715a.svg": "/youtube-clone/static/media/share.2b19715a.svg",
+    "static/media/sort.96da8701.svg": "/youtube-clone/static/media/sort.96da8701.svg",
     "static/media/thumb-down.3e33014f.svg": "/youtube-clone/static/media/thumb-down.3e33014f.svg",
-    "static/media/thumb-up.8bca4e51.svg": "/youtube-clone/static/media/thumb-up.8bca4e51.svg"
+    "static/media/thumb-up.8bca4e51.svg": "/youtube-clone/static/media/thumb-up.8bca4e51.svg",
+    "static/media/verified.7bd46d8e.svg": "/youtube-clone/static/media/verified.7bd46d8e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0ffba3bb.js",
     "static/js/2.dc025bb5.chunk.js",
-    "static/css/main.294217d6.chunk.css",
-    "static/js/main.05f353c1.chunk.js"
+    "static/css/main.e0ef7d70.chunk.css",
+    "static/js/main.7c053825.chunk.js"
   ]
 }
