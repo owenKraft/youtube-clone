@@ -105,7 +105,8 @@ const RecList = (props) => {
                 views = {275619}
                 age = {1}
             />
-
+            <RecVideo 
+            />
         </div>
     )
 }
