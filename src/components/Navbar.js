@@ -17,9 +17,7 @@ const Navbar = (props) => {
                 />
                 <img className="logo" src={logo} alt="primary logo"></img>
             </div>
-            <div className="search">
-                <NavSearch />
-            </div>
+            <NavSearch />
             <NavRight />
         </nav>
     )

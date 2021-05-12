@@ -1,9 +1,11 @@
 import React from 'react'
 import YouTubeWrapper from './YouTubeWrapper'
 import VideoDetails from './VideoDetails'
+import ChannelInfo from './ChannelInfo'
+import CommentArea from './CommentArea'
 
 const VideoColumn = (props) => {
-    const videoID = "2JYx-_eXQa4"
+    const videoID = props.videoID
 
     return (
         <div className="video-column">
@@ -11,6 +13,12 @@ const VideoColumn = (props) => {
                 videoID = {videoID}
             />
             <VideoDetails 
+                videoID = {videoID}
+            />
+            <ChannelInfo 
+                videoID = {videoID}
+            />
+            <CommentArea
                 videoID = {videoID}
             />
         </div>
