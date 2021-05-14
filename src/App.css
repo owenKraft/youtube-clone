@@ -84,9 +84,11 @@ body {
 
 .notice-banner {
   height: 24px;
-  background-color: #32BF84;
+  /* background-color: #32BF84; */
+  background-color: var(--main-light-blue);
   font-size: 16px;
-  color: #023a1e;
+  /* color: #023a1e; */
+  color: var(--main-bg-color-dark);
   display: flex;
   align-items: center;
   justify-content: center;
